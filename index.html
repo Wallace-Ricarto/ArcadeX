@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcade X</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="imagens/favicon.ico">
+</head>
+<body class="body-home">
+    <div id="container-carregamento">
+        <div id="overlay-carregamento"></div>
+        <div id="spinner-carregamento">
+            <img src="imagens/carregamento.png" alt="Carregando...">
+        </div>
+    </div>
+
+    <div class="noite-estrelada">
+    </div>
+
+    <header>
+        <h1>Arcade X</h1>
+        <div class="controles-audio-estrelas">
+            <button id="alternar-Musica">🔊</button>
+            <button id="alternar-Estrelas">💫</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="secao-jogos" class="container-cartao">
+            </section>
+
+        <section id="secao-modos-jogo">
+            <h2>Selecione um Modo de Jogo</h2>
+            <div id="container-lista-modos" class="container-cartao">
+                </div>
+            <button id="botao-voltar-jogos" class="botao-voltar">Voltar para a Lista de Jogos</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Arcade X. Todos os direitos reservados.</p>
+    </footer>
+
+    <audio id="musica-Fundo" loop autoplay>
+        <source src="musicas/once_in_paris.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
