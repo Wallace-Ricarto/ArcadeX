@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('load', esconderCarregamentoCompleto);
 
     esconderCarregamentoCompleto();
-    
+
     // --- Lista de Modos de Jogo---
     const modosPadrao = {
         solo: {

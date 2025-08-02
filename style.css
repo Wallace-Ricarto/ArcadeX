@@ -9,13 +9,13 @@
 
 body {
     font-family: 'Arial', sans-serif;
+    height: 100vh;
     margin: 0;
     padding: 0;
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 }
 
 .body-home {
@@ -26,6 +26,7 @@ body {
 
 header {
     background-color: var(--cor-destaque);
+    flex-shrink: 0;
     padding: 20px;
     display: flex;
     flex-direction: row;
@@ -77,6 +78,11 @@ header {
         background-color: #981111;
         cursor: pointer;
     }
+}
+
+main {
+    flex-grow: 1;
+    overflow-y: auto;
 }
 
 #secao-modos-jogo {
@@ -186,8 +192,13 @@ footer {
 }
 
 @keyframes girarImagem {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 /* Estrelas */
@@ -217,9 +228,11 @@ footer {
     0% {
         width: 0;
     }
+
     30% {
         width: 100px;
     }
+
     100% {
         width: 0;
     }
@@ -229,9 +242,11 @@ footer {
     0% {
         width: 0;
     }
+
     30% {
         width: 30px;
     }
+
     100% {
         width: 0;
     }
@@ -242,9 +257,11 @@ footer {
         transform: translateX(0) translateY(0) rotateZ(0deg);
         opacity: 0;
     }
+
     10% {
         opacity: 1;
     }
+
     100% {
         transform: translateX(-500px) translateY(500px) rotateZ(0deg);
         opacity: 0;
